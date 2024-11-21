@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Swap & Lease</title>
-    <link rel="stylesheet" href="SE.css" />
+    <link rel="stylesheet" href="styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
 
   </head>
@@ -67,9 +67,10 @@
           </div>
         </div>
         
-        <div class="panel">
-  
-          <div class="book">
+        
+        <div class="scroller">
+          <div class="scroller__inner">
+            <div class="book b1">
             <div class="bookimage">
               <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1598011736i/54898389.jpg" alt="image1">
             </div>
@@ -78,10 +79,13 @@
             </div>
             <div class="details">
               <p>Author</p>
-              <p>rating</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
             </div>
-          </div>
-          <div class="book">
+            </div>
+          <div class="book b2">
             <div class="bookimage">
               <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1545854312i/12609433.jpg" alt="image1">
             </div>
@@ -90,11 +94,13 @@
             </div>
             <div class="details">
               <p>Author</p>
-              <p>rating</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
             </div>
-
           </div>
-          <div class="book">
+          <div class="book b3">
             <div class="bookimage">
               <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1655988385i/40121378.jpg" alt="image1">
             </div>
@@ -103,22 +109,28 @@
             </div>
             <div class="details">
               <p>Author</p>
-              <p>rating</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
             </div>
           </div>
-          <div class="book">
+          <div class="book b4">
             <div class="bookimage">
               <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1465761302i/28257707.jpg" alt="image1">
             </div>
             <div class="booktitle">
               <p>Book Title</p>
             </div>
-            <div class="details">
-              <p>Author</p>
-              <p>rating</p>
-            </div>
+              <div class="details">
+                <p>Author</p>
+                <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+              </div>
           </div>
-          <div class="book">
+          <div class="book b5">
             <div class="bookimage">
               <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1511288482i/11084145.jpg" alt="image1">
             </div>
@@ -127,143 +139,470 @@
             </div>
             <div class="details">
               <p>Author</p>
-              <p>5.0</p>
-            </div>
-          </div>
-        </div>
-  
-      </div>
-      <div class="totalpanel">
-        <div class="panelheader">
-          <div class="paneltitle">
-            <h4>Romance</h4>
-          </div>
-          <div class="panelicon">
-            <i class="ri-arrow-right-s-line"></i>
-          </div>
-        </div>
-        
-        <div class="panel">
-  
-          <div class="book">
-            <div class="bookimage">
-              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1658767285i/61713106.jpg" alt="image1">
-            </div>
-            <div class="booktitle">
-              <p>Book Title</p>
-            </div>
-            <div class="details">
-              <p>Author</p>
-              <p>rating</p>
-            </div>
-          </div>
-          <div class="book">
-            <div class="bookimage">
-              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1670530488i/64645812.jpg" alt="image1">
-            </div>
-            <div class="booktitle">
-              <p>Book Title</p>
-            </div>
-            <div class="details">
-              <p>Author</p>
-              <p>rating</p>
-            </div>
-          </div>
-          <div class="book">
-            <div class="bookimage">
-              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1433883455i/23546634.jpg" alt="image1">
-            </div>
-            <div class="booktitle">
-              <p>The way I used to be</p>
-            </div>
-            <div class="details">
-              <p>Amber Smith</p>
-              <p>rating</p>
-            </div>
-          </div>
-          <div class="book">
-            <div class="bookimage">
-              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1469509467i/29236380.jpg" alt="image1">
-            </div>
-            <div class="booktitle">
-              <p>Girl in Pieces</p>
-            </div>
-            <div class="details">
-              <p>Kathleen Glasgow</p>
-              <p>rating</p>
-            </div>
-          </div>
-          <div class="book">
-            <div class="bookimage">
-              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1404331702i/18460392.jpg" alt="image1">
-            </div>
-            <div class="booktitle">
-              <p>All the Bright Places</p>
-            </div>
-            <div class="details">
-              <p>Jennifer Niven</p>
               <div class="rating">
                 <p>5.0</p>
-                <img src="star.png" alt="">
+                <img src="star.png" alt="star">
               </div>
             </div>
           </div>
-        </div>
-  
+          <div class="book b6">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1581527774i/41881472.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          <div class="book b7">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1703329310i/23692271.jpg" alt="imagee">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          <div class="book b8">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1409602421i/106835.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          </div>
+          
+        </div>  
       </div>
       <div class="totalpanel">
         <div class="panelheader">
           <div class="paneltitle">
-            Engineering Studies
+            <h4>Crime</h4>
           </div>
           <div class="panelicon">
             <i class="ri-arrow-right-s-line"></i>
           </div>
         </div>
         
-        <div class="panel">
-  
-          <div class="book">
+        <div class="scroller">
+          <div class="scroller__inner">
+            <div class="book b1">
             <div class="bookimage">
-              <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-1.png" alt="image1">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1717001983i/209528310.jpg" alt="">
             </div>
             <div class="booktitle">
-              Book Title
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+            </div>
+          <div class="book b2">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1714083387i/203751835.jpg" alt="">           
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
             </div>
           </div>
-          <div class="book">
+          <div class="book b3">
             <div class="bookimage">
-              <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-2.png" alt="image1">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1711179024i/206777707.jpg" alt="image1">
             </div>
             <div class="booktitle">
-              Book Title
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
             </div>
           </div>
-          <div class="book">
+          <div class="book b4">
             <div class="bookimage">
-              <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-3.png" alt="image1">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1728549570i/220284186.jpg" alt="image1">
             </div>
             <div class="booktitle">
-              Book Title
+              <p>Book Title</p>
+            </div>
+              <div class="details">
+                <p>Author</p>
+                <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+              </div>
+          </div>
+          <div class="book b5">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1711027483i/209786389.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
             </div>
           </div>
-          <div class="book">
+          <div class="book b6">
             <div class="bookimage">
-              <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-4.png" alt="image1">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1593388297i/53450790.jpg" alt="image1">
             </div>
             <div class="booktitle">
-              Book Title
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
             </div>
           </div>
-          <div class="book">
+          <div class="book b7">
             <div class="bookimage">
-              <img src="https://raw.githubusercontent.com/KordePriyanka/Books4MU-Book-Store-Website-/main/image/book-4.png" alt="image1">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1621347398i/57693172.jpg" alt="imagee">
             </div>
             <div class="booktitle">
-              Book Title
+              <p>Book Title</p>
             </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          <div class="book b8">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1661428846i/62080187.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          </div>
+          
+        </div>  
+      </div>
+      <div class="totalpanel">
+        <div class="panelheader">
+          <div class="paneltitle">
+            Classics
+          </div>
+          <div class="panelicon">
+            <i class="ri-arrow-right-s-line"></i>
           </div>
         </div>
+        
+        <div class="scroller">
+          <div class="scroller__inner">
+            <div class="book b1">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1657781256i/61439040.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+            </div>
+          <div class="book b2">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1383718290i/13079982.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          <div class="book b3">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1553383690i/2657.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          <div class="book b4">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1329189714i/2165.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+              <div class="details">
+                <p>Author</p>
+                <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+              </div>
+          </div>
+          <div class="book b5">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1590930002i/49552.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          <div class="book b6">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1327869409i/7624.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          <div class="book b7">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1646444605i/485894.jpg" alt="imagee">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          <div class="book b8">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1490528560i/4671.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          </div>
+          
+        </div>  
+      </div>
+
+      <div class="totalpanel">
+        <div class="panelheader">
+          <div class="paneltitle">
+            Historical Fiction
+          </div>
+          <div class="panelicon">
+            <i class="ri-arrow-right-s-line"></i>
+          </div>
+        </div>
+        
+        <div class="scroller">
+          <div class="scroller__inner">
+            <div class="book b1">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1727713627i/203578730.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+            </div>
+          <div class="book b2">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1709395289i/203747795.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          <div class="book b3">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1715284321i/205064706.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          <div class="book b4">
+            <div class="bookimage">
+              <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1713211444i/203578885.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+              <div class="details">
+                <p>Author</p>
+                <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+              </div>
+          </div>
+          <div class="book b5">
+            <div class="bookimage">
+              <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1714031079l/199793426._SY475_.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          <div class="book b6">
+            <div class="bookimage">
+              <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1714651357l/206101580._SY475_.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          <div class="book b7">
+            <div class="bookimage">
+              <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1712703000l/207294178._SY475_.jpg" alt="imagee">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          <div class="book b8">
+            <div class="bookimage">
+              <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1708704870l/205064715._SY475_.jpg" alt="image1">
+            </div>
+            <div class="booktitle">
+              <p>Book Title</p>
+            </div>
+            <div class="details">
+              <p>Author</p>
+              <div class="rating">
+                <p>5.0</p>
+                <img src="star.png" alt="star">
+              </div>
+            </div>
+          </div>
+          </div>
+          
+        </div>  
+      </div>
   
       </div>
       
@@ -328,6 +667,6 @@
       <a href="#signup" class="button">Sign Up Now</a>
     </section>
 
-    <script src="SE.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

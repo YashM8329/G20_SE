@@ -1,0 +1,265 @@
+/* General Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #caba9c;
+  color: white;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Top Navigation Bar Styling */
+.top-nav {
+  display: flex;
+  height: 45px;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Vertically align arrow and text */
+  background-color: white;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center; /* Center the arrow and text vertically */
+  gap: 20px; /* Add some space between the arrow and the logo */
+}
+
+.back-arrow {
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.back-arrow:hover {
+  font-size: 23px;
+  transition: all 0.3s ease-in-out;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Tabs Navigation Styling */
+.nav-links {
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.nav-links a {
+  color: #4d2d18;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  opacity: 50%;
+}
+
+.nav-links .tab.active {
+  color: black;
+  box-shadow: 0px 4px 10px rgba(255, 75, 130, 0.3);
+  background-color: white;
+}
+
+/* Profile Section Container */
+.profile-container {
+  max-width: 1100px;
+  margin: 25px auto;
+  padding: 20px;
+  background-color: #4d2d18; /* Dark brown background for profile */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.profile-header h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: white;
+}
+.profile-header i {
+  margin-right: 10px;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Profile Details Section */
+.profile-details label {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.profile-details input {
+  width: 750px;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.profile-details input:disabled {
+  background-color: #666;
+}
+
+.edit-profile button {
+  background-color: #caba9c;
+  color: black;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-left: 420px;
+}
+
+.edit-profile button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Profile Picture Section */
+.profile-picture {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-picture img {
+  width: 150px;
+  height: 150px;
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-picture .edit-btn {
+  padding: 8px 15px;
+  margin-left: 15px;
+  background-color: white;
+  color: #4d2d18;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-picture .edit-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Tab Content Styling */
+.tab-content {
+  display: none;
+  padding: 20px 0;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+#transaction,
+#bookmarks,
+#rent,
+#settings {
+  background-color: #4d2d18;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Active Tab Highlighting */
+.nav-links .tab.active {
+  background-color: #caba9c;
+  color: #4d2d18;
+  border-bottom: 3px solid #4d2d18;
+}
+
+/* Tab Content Styling */
+.tab-content {
+  display: none;
+  padding: 20px;
+  background-color: #caba9c;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Light Mode Styles
+body.light-mode {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+body.light-mode .top-nav {
+  background-color: #ffffff;
+  color: #333;
+}
+
+body.light-mode .theme-toggle i.fa-moon {
+  color: #666;
+}
+
+body.light-mode .theme-toggle i.fa-sun {
+  color: #ffcc00;
+}
+
+/* Dark Mode Styles */
+/* body.dark-mode {
+  background-color: #1e1e2f;
+  color: #fff;
+}
+
+body.dark-mode .top-nav {
+  background-color: #2b2b44;
+  color: #fff;
+}
+
+body.dark-mode .theme-toggle i.fa-moon {
+  color: #f0e68c;
+}
+
+body.dark-mode .theme-toggle i.fa-sun {
+  color: #888;
+}
+
+/* Theme Toggle */
+/* .theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.theme-toggle label {
+  font-size: 18px;
+}
+
+.theme-toggle input[type="checkbox"] {
+  display: none;
+}
+
+.theme-toggle i {
+  font-size: 20px;
+  transition: color 0.3s ease;
+} */

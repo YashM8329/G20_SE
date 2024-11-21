@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings - Book Verse</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="settings.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="logo">
+        <p>Book Verse</p>
+      </div>
+      <div class="user-nav">
+        <div class="profile-dropdown">
+          <img src="./Assets/User_profile.png" alt="User" id="profile-icon" />
+        </div>
+      </div>
+    </header>
+    <nav class="nav-links">
+      <a href="Profie-in-details.html">Personal Info</a>
+      <a href="transaction-history.html">Transaction History</a>
+      <a href="bookmarks.html">Bookmarks</a>
+      <a href="#">Rent Your Book</a>
+      <a href="settings.html" class="active">Settings</a>
+    </nav>
+
+    <!-- Settings Section -->
+    <section class="settings-container">
+      <div class="settings-header">
+        <h1><i class="fas fa-cog"></i> Settings</h1>
+      </div>
+      <div class="settings-content">
+        <div class="settings-section">
+          <h2>Profile Information</h2>
+          <div class="settings-item">
+            <label>Name</label>
+            <input type="text"/>
+          </div>
+          <div class="settings-item">
+            <label>Email</label>
+            <input type="email" />
+          </div>
+          <div class="settings-item">
+            <label>Phone Number</label>
+            <input type="tel"/>
+          </div>
+          <button class="action-btn">Save Changes</button>
+        </div>
+
+        <div class="settings-section">
+          <h2>Change Password</h2>
+          <button class="action-btn">Change Password</button>
+        </div>
+
+        <div class="settings-section">
+          <h2>Push Notifications</h2>
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <div class="settings-section">
+          <h2>Preferences</h2>
+          <div class="settings-item">
+            <label>Language</label>
+            <select>
+              <option value="en">English</option>
+              <option value="es">Spanish</option>
+              <option value="fr">French</option>
+            </select>
+          </div>
+          <div class="settings-item">
+            <label>Theme</label>
+            <button class="action-btn">Customize Theme</button>
+          </div>
+        </div>
+
+        <div class="settings-section">
+          <h2>Support and Feedback</h2>
+          <button class="action-btn">Contact Support</button>
+          <button class="action-btn">Submit Feedback</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

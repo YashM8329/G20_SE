@@ -1,0 +1,118 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5efe6;
+  color: #2e2e2e;
+  overflow-x: hidden;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4d2d18;
+  color: white;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.nav-links a {
+  color: #f5efe6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f0b27a;
+}
+
+/* Content Section */
+.content-section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+  margin-bottom: 20px;
+  color: #4d2d18;
+}
+
+/* Transaction Table */
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.transaction-table th,
+.transaction-table td {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-table th {
+  background-color: #4d2d18;
+  color: white;
+}
+
+.transaction-table tr:hover {
+  background-color: #f0b27a;
+  color: #2e2e2e;
+}
+
+/* Bookmark List */
+.bookmark-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.bookmark-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5efe6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bookmark-item p {
+  margin-bottom: 10px;
+}
+
+.bookmark-item .btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #4d2d18;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.bookmark-item .btn:hover {
+  background-color: #f0b27a;
+  color: #2e2e2e;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Verse - User Profile</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Profile-in-detail.css" />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="nav-left">
+        <i class="fas fa-arrow-left back-arrow" onclick="goBack()"></i>
+        <p class="logo">Book Verse</p>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-links">
+      <a href="#" class="tab" onclick="showTab('personal')">Personal Info</a>
+      <a href="#" class="tab" onclick="showTab('transaction')"
+        >Transaction History</a
+      >
+      <a href="#" class="tab" onclick="showTab('bookmarks')">Bookmarks</a>
+      <a href="#" class="tab" onclick="showTab('rent')">Rent Your Book</a>
+      <a href="#" class="tab" onclick="showTab('settings')">Settings</a>
+    </nav>
+
+    <!-- Profile Section (Tabs Content) -->
+    <section id="tab-content">
+      <!-- Personal Info Tab -->
+      <div id="personal" class="tab-content active">
+        <div class="profile-container">
+          <div class="profile-header">
+            <h1><i class="fas fa-user"></i> Profile</h1>
+          </div>
+          <div class="profile-content">
+            <!-- User Information -->
+            <div class="profile-details">
+              <label>Name</label>
+              <input type="text" id="name" value="John Doe" disabled />
+
+              <label>Email Address</label>
+              <input
+                type="email"
+                id="email"
+                value="johndoe@example.com"
+                disabled
+              />
+
+              <label for="phone">Mobile Number:</label>
+              <input
+                type="tel"
+                id="phone"
+                value="9876543210"
+                disabled
+                pattern="[0-9]{10}"
+              />
+
+              <label>Address</label>
+              <input
+                type="text"
+                id="address"
+                value="123 Street, City"
+                disabled
+              />
+
+              <label>Reader's Score</label>
+              <input type="text" value="34/100" readonly />
+
+              <div class="edit-profile">
+                <button id="edit-btn">Edit Profile</button>
+              </div>
+            </div>
+
+            <!-- Profile Picture Section -->
+            <div class="profile-picture">
+              <img
+                src="./Assets/User_profile.png"
+                alt="User-photo"
+                id="profile-pic"
+              />
+              <label for="upload-pic" class="edit-btn">
+                <i class="fas fa-pen"></i>
+              </label>
+              <input
+                type="file"
+                id="upload-pic"
+                accept="image/*"
+                style="display: none"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Other tabs (Transaction History, Bookmarks, Rent Your Book, Settings) -->
+      <div id="transaction" class="tab-content">
+        <h2>Transaction History</h2>
+        <p>Details of all your transactions.</p>
+      </div>
+      <div id="bookmarks" class="tab-content">
+        <h2>Bookmarks</h2>
+        <p>Your bookmarked books and resources.</p>
+      </div>
+      <div id="rent" class="tab-content">
+        <h2>Rent Your Book</h2>
+        <p>List books for rent.</p>
+      </div>
+      <div id="settings" class="tab-content">
+        <div class="theme-toggle">
+          <label for="theme-switch">Toggle Light/Dark Mode</label>
+          <input type="checkbox" id="theme-switch" />
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </div>
+      </div>
+
+      <!-- Settings Section -->
+      
+    <script src="Profile-in-detail.js"></script>
+  </body>
+</html>
