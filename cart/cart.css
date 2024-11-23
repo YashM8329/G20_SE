@@ -1,3 +1,4 @@
+
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:400,700);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -60,8 +61,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 body {
-  background-color: #f5efe6;
   color: #333;
+  background-color: #d9c9ac;
   -webkit-font-smoothing: antialiased;
   font-family: "Droid Serif", serif;
 }
@@ -95,7 +96,7 @@ img {
   text-align: center;
   font-size: 2em;
   padding: 1em 0;
-  border-bottom: 1px solid #dadada;
+  border-bottom: 1px solid #0c0b0b;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -109,10 +110,9 @@ img {
 
 .heading {
   padding: 1em 0;
-  border-bottom: 1px solid #D0D0D0;
+  border-bottom: 1px solid #0c0b0b;
 }
 .heading h1 {
-  
   font-family: "Droid Serif", serif;
   font-size: 2em;
   float: left;
@@ -176,8 +176,9 @@ img {
   width: 100%;
   /* vertical-align: middle; */
   padding: 1.5em;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid #0c0b0b;
 }
+
 .cart .items .infoWrap {
   display: table;
   width: 100%;
@@ -201,15 +202,15 @@ img {
 .cart .items .cartSection p {
   display: inline-block;
   font-size: .85em;
-  color: #777777;
+  color: #0c0b0b;
   font-family: "Montserrat", sans-serif;
 }
 .cart .items .cartSection p .quantity {
   font-weight: bold;
-  color: #333;
+  color: #0c0b0b;
 }
 .cart .items .cartSection p.stockStatus {
-  color: #82CA9C;
+  color: #04be48;
   font-weight: bold;
   padding: .5em 0 0 1em;
   text-transform: uppercase;
@@ -249,7 +250,7 @@ img {
   padding: 1em 1em 0;
   display: block;
   margin-top: .5em;
-  border-top: 1px solid #dadada;
+  border-top: 1px solid #0c0b0b;
 }
 .special .specialContent:before {
   content: "\21b3";
@@ -353,7 +354,7 @@ a.remove:hover {
   text-align: left;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
-  color: #777;
+  color: #0c0b0b
 }
 
 .subtotal .totalRow .value {

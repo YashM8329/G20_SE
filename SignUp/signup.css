@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #4d2d18;
   background-image: url('book-background.jpg'); /* Replace with your own image */
   background-size: cover;
   background-position: center;
@@ -19,7 +20,7 @@ body {
 
 /* Signup Container */
 .signup-container {
-  background-color: rgba(0, 0, 0, 0.7); /* Darker background for the form */
+  background-color: #caba9c;
   padding: 40px; /* Space for form fields */
   border-radius: 15px;
   width: 100%;
@@ -34,7 +35,7 @@ body {
   text-align: center;
   margin-bottom: 20px;
   font-size: 28px;
-  color: #ffbb00; /* Golden color */
+  color:  #4d2d18; 
   font-weight: bold;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
@@ -48,7 +49,7 @@ body {
 .input-group label {
   display: block;
   font-size: 16px;
-  color: #ccc;
+ color: #0c0c0c;
   margin-bottom: 5px;
 }
 
@@ -56,16 +57,16 @@ body {
   width: 100%;
   padding: 12px 40px 12px 40px; /* Adjust padding for icons inside the box */
   font-size: 16px;
-  border: 2px solid #ccc;
+  border: 2px solid #0c0c0c;
   border-radius: 8px;
   background-color: transparent;
-  color: #fff;
+  color: #0c0c0c;
   transition: all 0.3s ease;
 }
 
 /* Aligning the placeholder text with the icon */
 .input-group input::placeholder, .input-group textarea::placeholder {
-  color: #bbb;
+  color: #0c0c0c;
   font-size: 14px;
   padding-left: 45px; /* Ensures placeholder text is aligned with the icon */
 }
@@ -80,8 +81,8 @@ body {
   left: 15px; /* Position icon inside the box */
   top: 65%;
   transform: translateY(-50%);
-  font-size: 18px;
-  color: #ccc;
+  font-size: 16px;
+  color: #0c0c0c;
 }
 
 /* Password Input Group Styling */
@@ -92,16 +93,24 @@ body {
 .input-group.password-icon i {
   position: absolute;
   left: 15px; /* Position icon inside the box */
-  top: 60%;
+  top: 70%;
   transform: translateY(-50%);
   font-size: 18px;
-  color: #ccc;
+  color: #0c0c0c;
 }
 
-#eye {
+#eye-password {
   position: absolute;
   right: 10px; /* Position eye icon inside the box on the right */
-  top: 50%;
+  top: 79%;
+  transform: translateY(-50%);
+  width: 24px;
+  cursor: pointer;
+}
+#eye-confirm {
+  position: absolute;
+  right: 10px; /* Position eye icon inside the box on the right */
+  top: 79%;
   transform: translateY(-50%);
   width: 24px;
   cursor: pointer;
@@ -134,12 +143,12 @@ body {
 .footer-text {
   text-align: center;
   margin-top: 15px;
-  font-size: 14px;
-  color: #ccc;
+  font-size: 16px;
+  color: #0c0c0c;
 }
 
 .footer-text a {
-  color: #ffbb00;
+  color: #0d24f3;
   text-decoration: none;
 }
 
@@ -175,7 +184,7 @@ body {
   }
 
   .input-group input, .input-group textarea, .btn {
-    font-size: 14px;
+    font-size: 16px;
     padding: 12px;
   }
 }

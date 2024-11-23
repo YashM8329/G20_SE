@@ -7,6 +7,7 @@
   
   /* Body and container */
   body {
+
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
@@ -16,8 +17,8 @@
   }
   
   .container {
-    background-color: white;
-    width: 450px;
+     background-color: #caba9c;
+        width: 450px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -26,7 +27,7 @@
   
   h1 {
     font-size: 2em;
-    color: #333;
+    color:  #4d2d18;
   }
   
   .order-summary {
