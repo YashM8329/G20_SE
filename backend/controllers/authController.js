@@ -129,3 +129,58 @@ exports.forgotPassword = async (req, res, next) => {
         next(error);
     }
 };
+
+exports.googleAuthCallback = async (req, res, next) => {
+    try {
+      const googleUser = req.user; 
+  
+      const existingUser = await User.findOne({ email: googleUser.email });
+  
+      if (existingUser) {
+        if (!existingUser.isGoogleUser) {
+          existingUser.googleId = googleUser.id;
+          existingUser.isGoogleUser = true;
+          existingUser.photo = googleUser.photos[0]?.value || null;
+          await existingUser.save();
+  
+          const token = generateToken({
+            userId: existingUser._id,
+            role: 'user' // assuming 'user' is the role; change if necessary
+          });
+  
+          res.cookie('auth_token', token, {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production',
+            sameSite: 'strict',
+            maxAge: 3600000 // 1 hour
+          });
+  
+          return res.redirect('/profile');
+        } else {
+          // If the user is already a Google user, just log them in
+          // Generate and send a JWT token or do whatever authentication you use
+          const token = generateToken({
+            userId: existingUser._id,
+            role: 'user'
+          });
+          res.cookie('auth_token', token, {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === 'production',
+            sameSite: 'strict',
+            maxAge: 3600000 // 1 hour
+          });
+  
+          return res.redirect('/profile'); 
+        }
+      } else {
+        // If no existing user, redirect to registration page or show an error
+        return res.status(404).json({
+          status: 'fail',
+          message: 'No user found with this email. Please register first.'
+        });
+      }
+    } catch (error) {
+      next(error);
+    }
+  };
+  

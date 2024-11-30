@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
+const passport = require('passport'); // Import passport
+const session = require('express-session'); // For session management
 const userRoutes = require('./routes/userRoutes');
 const publisherRoutes = require('./routes/publisherRoutes');
 const authRoutes = require('./routes/authRoutes');
@@ -28,6 +30,11 @@ const limiter = rateLimit({
 
 app.use('/api/', limiter);
 
+// Initialize Passport
+app.use(session({ secret: process.env.SESSION_SECRET, resave: false, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
+
 // Connect to MongoDB with updated options
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
@@ -36,6 +43,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 .then(() => console.log('Connected to MongoDB'))
 .catch(err => console.error('MongoDB connection error:', err));
 
+// Home Route
 app.get('/', (req, res) => {
     res.status(200).json({
         message: 'Welcome to the Book Swap App!',
@@ -49,17 +57,19 @@ app.get('/', (req, res) => {
             orderRoutes: '/api/v1/orders',
             reviewRoutes: '/api/v1/reviews',
         },
-        documentation: 'https://your-api-documentation-link.com' // Add a link to your API documentation if available
+        documentation: 'https://your-api-documentation-link.com'
     });
 });
+
 // Routes
 app.use('/api/user', userRoutes);
 app.use('/api/publisher', publisherRoutes);
-app.use('/api/auth', authRoutes);
+app.use('/api/auth', authRoutes);  // Auth routes should be defined
 app.use('/api/v1/books', bookRoutes);
 app.use('/api/v1/cart', cartRoutes);
 app.use('/api/v1/orders', orderRoutes);
 app.use('/api/v1/reviews', reviewRoutes);
+
 // Error handling middleware
 app.use(errorHandler);
 

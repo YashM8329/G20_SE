@@ -39,6 +39,18 @@ const userSchema = new mongoose.Schema({
     trim: true,
     match: [/^\d{5,6}$/, 'Please enter a valid zipcode']
   },
+  googleId: {
+    type: String,
+    unique: true,
+    sparse: true
+  },
+  isGoogleUser: {
+    type: Boolean,
+    default: false,
+  },
+  photo: {
+    type: String, // To store profile picture URL
+  },
   createdAt: {
     type: Date,
     default: Date.now
