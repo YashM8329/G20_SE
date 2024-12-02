@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Power of Habit</title>
+  <link rel="stylesheet" href="book.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <div class="image-section">
+    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1545854312i/12609433.jpg"
+         alt="The Power of Habit" class="book-cover">
+  </div>
+  
+  <div class="info-section">
+    <header class="book-header">
+      <h1>The Power of Habit</h1>
+      <button class="bookmark-button" onclick="toggleBookmark()">
+        <span class="material-icons">star</span>
+      </button>
+    </header>
+
+    <div class="rating-section">
+      <p class="author">by Charles Duhigg</p>
+      <span class="stars">★★★★☆</span>
+      <span class="rating">4.13 · 3,894,827 ratings</span>
+    </div>
+
+    <div class="description-section">
+      <h2>Description</h2>
+      <p>
+       The Power of Habit by Charles Duhigg explores the science behind habit formation and how they can be changed. The book introduces the concept of the "habit loop"—a cycle of cue, routine, and reward—that shapes behavior. Duhigg explains how understanding and manipulating this loop can help individuals break bad habits and develop new, positive ones.
+      </p>
+    </div>
+    <div class="price-section">
+      <h3>Prices</h3>
+      <div class="price-row">
+        <p class="price rent-price">Rent: $1.99/Week</p>
+        
+      </div>
+    </div>
+    
+
+    <div class="renter-info">
+      <h2>Renter Info</h2>
+      <div class="renter-details">
+        <div class="detail-row">
+          <span class="detail-title">Name:</span>
+          <span class="detail-value">John Doe</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-title">Address:</span>
+          <span class="detail-value">123 Main St, Springfield</span>
+        </div>
+        <div class="detail-row">
+          <span class="detail-title">Reader Score:</span>
+          <span class="detail-value">★★★★☆</span>
+        </div>
+      </div>
+    </div>
+
+    <button class="rent-button">Add to Cart</button>
+
+    <div class="rating-container">
+      <div class="rating-input-section">
+        <h3>Rate this book:</h3>
+        <div class="star-rating">
+          <span class="star" data-value="1">★</span>
+          <span class="star" data-value="2">★</span>
+          <span class="star" data-value="3">★</span>
+          <span class="star" data-value="4">★</span>
+          <span class="star" data-value="5">★</span>
+        </div>
+        <p class="selected-rating">Selected Rating: 0</p>
+      </div>
+  
+      <div class="rating-input-section">
+        <h3>Rate the renter:</h3>
+        <div class="renter-star-rating">
+          <span class="renter-star" data-value="1">★</span>
+          <span class="renter-star" data-value="2">★</span>
+          <span class="renter-star" data-value="3">★</span>
+          <span class="renter-star" data-value="4">★</span>
+          <span class="renter-star" data-value="5">★</span>
+        </div>
+        <p class="renter-selected-rating">Selected Renter Rating: 0</p>
+      </div>
+    </div>
+    <br>
+
+    <div class="reviews-section">
+      <h2>Submit Your Review</h2>
+      <textarea id="user-review" rows="5" placeholder="Write your review here..."></textarea>
+      <button class="submit-review-button" onclick="submitReview()">Submit Review</button>
+    </div>
+
+<!-- General Reviews Section -->
+<div class="reviews-display-section">
+  <h2>Reviews</h2>
+
+  <div class="review">
+    <div class="review-header">
+      <span class="reviewer-name">Alice Johnson</span>
+      <span class="review-rating">★★★★☆</span>
+    </div>
+    <p class="review-text">
+      The Power of Habit offers a fascinating look at how habits shape our lives and how we can change them. Charles Duhigg combines science with storytelling to explain the power of habit loops, providing actionable advice on how to transform both personal and organizational routines. A must-read for anyone looking to improve their productivity and well-being.
+    </p>
+  </div>
+
+  <div class="review">
+    <div class="review-header">
+      <span class="reviewer-name">John Smith</span>
+      <span class="review-rating">★★★★★</span>
+    </div>
+    <p class="review-text">
+      Duhigg's exploration of habits is both enlightening and engaging. He skillfully blends research with real-world examples, showing how habits influence everything from personal health to societal movements. This book is a great resource for anyone interested in behavior change or seeking to understand the hidden forces that drive our decisions.
+    </p>
+  </div>
+
+  <div class="review">
+    <div class="review-header">
+      <span class="reviewer-name">Maria Lopez</span>
+      <span class="review-rating">★★★★☆</span>
+    </div>
+    <p class="review-text">
+      The Power of Habit is an eye-opening read that highlights the profound impact habits have on our lives. Duhigg provides practical tools for breaking bad habits and building good ones. Whether you're looking to improve your daily routine or transform your workplace culture, this book offers valuable insights that can lead to meaningful change.
+    </p>
+  </div>
+</div>
+  </div>
+
+
+<script src="book.js"></script>
+</body>
+</html>

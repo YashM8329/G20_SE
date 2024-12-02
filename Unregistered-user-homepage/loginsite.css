@@ -20,33 +20,90 @@ body {
 }
 
 .hero {
-  background: url("somephoto");
-  color: #fff;
+
+  background-color: #caba9c;
   position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   min-height: 100vh;
   text-align: center;
+  z-index: -1;
 }
+
+.favorite-books {
+  display: block;
+  position: relative;
+  bottom: 100px;
+  right: 150px;
+
+  margin: 17px 0 0 59px;
+  color: #4d2d18;
+  font-family: 'Taprom';
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 173.438px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+.about-bookverse {
+  position: relative;
+  left: 250px;
+  color: #4d2d18;
+  font-family: Outfit, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+  text-align: left;
+}
+
+.line-break {
+  position: relative;
+  color: #4d2d18;
+  font-family: Outfit, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23.438px;
+  text-align: left;
+}
+
+.rent-books {
+  border: #4d2d18;
+  position: relative;
+  left: 250px;
+  color: #4d2d18;
+  font-family: Outfit, var(--default-font-family);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33.6px;
+  text-align: right;
+}
+
 /* Modal Styling */
 .hero p {
   color: #3a3a3a;
 }
+
 .user-photo img {
   width: 300px;
   height: 300px;
   border-radius: 2rem;
 }
+
 .modal {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   position: fixed;
-  z-index: 5; /* On top of other elements */
+  z-index: 5;
+  /* On top of other elements */
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Semi-transparent background */
   align-items: center;
   justify-content: center;
 }
@@ -105,14 +162,18 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background: #000b58; /* Semi-transparent background for contrast */
-  z-index: 3; /* Ensure it's above the hero overlay */
+  background: #4d2d18;
+  /* Semi-transparent background for contrast */
+  z-index: 3;
+  /* Ensure it's above the hero overlay */
 }
+
 .nav-actions {
   display: flex;
   align-items: center;
   gap: 15px;
 }
+
 .nav-actions a {
   text-decoration: none;
   font-size: larger;
@@ -127,14 +188,17 @@ body {
   color: #fff;
   font-weight: bold;
 }
+
 .logo p {
   color: #fff4b7;
 }
+
 .logo img {
   height: 50px;
-  width: 50px;
+  width: 300px;
   border-radius: 0.5rem;
 }
+
 .profile-icon img {
   width: 40px;
   height: 40px;
@@ -177,9 +241,11 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
+
 .about {
   background: #f0f0f0;
 }
+
 .how-it-works {
   background: #f0f0f0;
 }
@@ -227,7 +293,8 @@ body {
 label {
   font-size: 16px;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.5); /* Faded text color */
+  color: rgba(0, 0, 0, 0.5);
+  /* Faded text color */
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -238,7 +305,8 @@ input[type="radio"] {
   appearance: none;
   width: 16px;
   height: 16px;
-  border: 1px solid rgba(0, 0, 0, 0.5); /* Faded border */
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  /* Faded border */
   border-radius: 50%;
   outline: none;
   margin-right: 8px;
@@ -249,6 +317,6 @@ input[type="radio"]:checked {
   background-color: #000b58;
 }
 
-input[type="radio"]:checked + label {
+input[type="radio"]:checked+label {
   color: #000b58;
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="heading">BOOKVERSE</div>
+        <div id="loginbox">
+            <div class="fields">
+                <form action="">
+                    <div class="inputfield">
+                        <input class="input" type="text" placeholder="username">
+                    </div>
+                    <div class="inputfield">
+                        <input class="input" id="password" type="password" placeholder="password">
+                        <img id="eye" src="images/eye-close.png" alt="">
+                    </div>
+                </form>
+                <button>login</button>
+                <a id="passforgot" href="#">forgot password?</a>
+                <div class="social-login">
+                    <button class="google-btn">
+                        <img src="https://www.gstatic.com/images/branding/product/1x/gsa_64dp.png"  class="social-logo">
+                        Login with Google
+                    </button>
+                </div>
+
+                <div class="register">
+                    <p>Not registered? </p>
+                    <a href="#signup" class="signup-link"> click here</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        let eyeicon = document.getElementById("eye");
+        let password = document.getElementById("password");
+
+        eyeicon.onclick = function(){
+            if(password.type== "password"){
+                password.type="text";
+                eyeicon.src = "images/eye-open.png";
+            }
+            else{
+                password.type="password";
+                eyeicon.src = "images/eye-close.png";
+            }
+        }
+
+    </script>
+</body>
+</html>

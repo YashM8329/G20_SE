@@ -1,0 +1,439 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero {
+  background: url("somephoto");
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+}
+/* Modal Styling */
+.hero p {
+  color: #3a3a3a;
+}
+.user-photo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 2rem;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 5; /* On top of other elements */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-content p {
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.modal-content strong {
+  font-weight: bold;
+}
+
+/* Edit Profile Button */
+.edit-profile-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.edit-profile-button:hover {
+  background-color: #ff4b3a;
+}
+
+/* Top Navigation Bar Styling */
+.top-nav {
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: #000b58; /* Semi-transparent background for contrast */
+  z-index: 3; /* Ensure it's above the hero overlay */
+  margin-bottom: 100px;
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.nav-actions a {
+  text-decoration: none;
+  font-size: larger;
+  color: #fff4b7;
+  margin-right: 10px;
+  margin-left: 25px;
+  font-weight: 200;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+.logo p {
+  color: #fff4b7;
+}
+.logo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 0.5rem;
+}
+.profile-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 0 5px;
+  margin-left: 850px;
+}
+
+.search-bar input {
+  border: none;
+  padding: 8px;
+  outline: none;
+  font-size: 16px;
+  width: 300px;
+}
+
+.search-bar button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 16px;
+}
+
+/* Profile Icon Styling */
+.profile-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.about {
+  background: #f0f0f0;
+}
+.how-it-works {
+  background: #f0f0f0;
+}
+
+.features {
+  background: #e0e0e0;
+}
+
+.cta {
+  background: #3a3a3a;
+  color: #fff;
+}
+
+.scroll-button,
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background: #ff6f61;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.scroll-button:hover,
+.button:hover {
+  background: #ff4b3a;
+}
+
+/* Side Navigation Styling */
+.side-nav {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.side-nav form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: large;
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.5); /* Faded text color */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.5); /* Faded border */
+  border-radius: 50%;
+  outline: none;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  background-color: #000b58;
+}
+
+input[type="radio"]:checked + label {
+  color: #000b58;
+}
+
+.recommendations {
+  margin-left: 18%;
+  padding: 30px;
+  background-color: #f5f0e6; /* Light, soft grey-beige */
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow around the section */
+  transition: background-color 0.3s ease;
+}
+
+.recommendations:hover {
+  background-color: #e6ddd1; /* Slightly darker on hover */
+}
+
+.totalpanel {
+  background-color: #fff; /* Clean white panel background */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow for panels */
+  margin-bottom: 30px;
+  transition: transform 0.2s ease;
+}
+
+
+
+.panelheader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #6b4f3f; /* Deep warm brown for panel headers */
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.paneltitle {
+  color: #8b5e3c; /* Lighter brown for accent */
+}
+
+.panelicon i {
+  color: #8b5e3c; /* Accent color for icons */
+  font-size: 1.4em;
+  transition: color 0.3s ease;
+}
+
+.panelicon i:hover {
+  color: #6b4f3f; /* Darker shade on icon hover */
+}
+
+.panel {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow: h;
+}
+
+.book:hover {
+  transform: scale(1.07); 
+  background-color: #eae3db; 
+}
+
+.booktitle {
+  color: #4d2d18;
+  font-weight: 600;
+  font-size: 1em;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.book:hover .booktitle {
+  color: #6b4f3f; 
+}
+
+.bookimage img {
+  width: 160px;
+  max-height: 220px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+  transition: box-shadow 0.3s ease;
+}
+
+.book:hover .bookimage img {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); 
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.totalpanel {
+  animation: fadeInUp 0.5s ease both; 
+}
+
+.totalpanel:nth-child(even) {
+  animation-delay: 0.3s;
+}
+
+.totalpanel:nth-child(odd) {
+  animation-delay: 0.1s; 
+}
+
+.details{
+  display: none;
+}
+
+.details:hover{
+  display: block;
+}
+
+.book {
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 15px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  position: relative; /* Ensure .details positions correctly inside .book */
+  margin-bottom: 100px;
+  margin-top: 40px;
+}
+
+.book .details {
+  display: none;
+  margin-top: 10px;
+  color: #4d2d18;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.book:hover .details {
+  display: block; 
+}
+
+.rating{
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+}
+
+.rating img{
+  width: 15px;
+  height: 15px;
+}
+
+.scroller{
+  width: 1050px;
+  height: 400px;
+  overflow: hidden;
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+@keyframes scroll{
+  to{
+    transform: translate(calc(-150% + 0.5rem));
+  }
+}
+
+.scroller__inner{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  animation: scroll 25s linear infinite;
+  /* border: 3px solid lime; */
+}
+
+.scroller__inner:hover{
+  animation-play-state: paused;
+}
+

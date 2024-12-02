@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Rental Form</title>
+    <link rel="stylesheet" href="rent.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rent Out Your Books</h1>
+        <form id="bookRentalForm">
+            <div class="form-group">
+                <label for="bookName">Book Name:</label>
+                <input type="text" id="bookName" name="bookName" placeholder="Enter the book name" required>
+            </div>
+            <div class="form-group">
+                <label for="isbn">ISBN:</label>
+                <input type="text" id="isbn" name="isbn" placeholder="Enter the ISBN" required>
+            </div>
+            <div class="form-group">
+                <label for="price">Price (per week):</label>
+                <input type="number" id="price" name="price" placeholder="Enter the price" required>
+            </div>
+            <div class="form-group">
+                <label for="bookPhoto">Upload Book Photo:</label>
+                <input type="file" id="bookPhoto" name="bookPhoto" accept="image/*" required>
+                <p class="instructions">(Instructions: Please upload a clear photo showcasing the condition of the book. Ensure the image highlights any wear, tear, or other visible details.)</p>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+        <div id="previewSection" class="hidden">
+            <img id="previewImage" alt="Book condition photo">
+            <div id="previewDetails">
+                <span id="previewBookName"></span>
+                <span id="previewPriceText"></span>
+            </div>
+        </div>
+        
+    </div>
+    <script src="rent.js"></script>
+</body>
+</html>
+

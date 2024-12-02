@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    background-image: url("https://images.pexels.com/photos/1387022/pexels-photo-1387022.jpeg?cs=srgb&dl=book-aesthetic-books-old-books-1387022.jpg&fm=jpg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#heading {
+    width: 50%;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.5em;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(80,80,80,0.4));
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#loginbox {
+    width: 35%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent */
+    color: #333;
+    border-radius: 15px;
+    min-width: 400px;
+    min-height: 300px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fields {
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    color: #333;
+    width: 100%;
+    border: 2px solid #888;
+    border-radius: 5px;
+    /* padding-left: 10px; */
+    /* height: 40px; */
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    /* margin-top: 15px;
+    margin-bottom: 15px; */
+    transition: all 0.3s ease;
+    border: 0;
+    background-color: rgba(1, 1, 0, 0);
+    
+}
+
+.input:focus {
+    background-color: rgba(1, 1, 0, 0);
+    outline: none;
+}
+
+button {
+    padding: 10px;
+    width: 60%;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.signup-link {
+    font-size: 0.9rem;
+    color: #555;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.signup-link:hover {
+    color: #333;
+}
+
+.signup-link:active {
+    color: #111;
+}
+
+.inputfield{
+    display: flex;
+    border: 3px solid #888;
+    margin-bottom: 15px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 6px 5px;
+    border-radius: 8px;
+    width: 270px;
+}
+
+#eye{
+    width: 24px;
+    cursor: pointer;
+
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #333;
+}
+
+.social-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* margin: 20px 0; */
+}
+
+/* Social login buttons styling */
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    background-color: #e64a3fd2; /* Google red */
+    color: #fff;
+}
+
+.google-btn:hover {
+    background-color: #c33d2ed4;
+}
+
+
+
+.facebook-btn:hover {
+    background-color: #334d84;
+}
+
+/* Social logos styling */
+.social-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Signup link styling */
+.signup-link {
+    font-size: 0.9rem;
+    color: #111;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.signup-link:hover {
+    color: #555;
+}
+
+.register{
+    display: flex;
+    gap: 5px;;
+}
+
+#passforgot{
+    color: #111;
+    transition: color 0.3s;
+    font-size: 0.9rem;
+}
+
+#passforgot:hover{
+    color: #555;
+}

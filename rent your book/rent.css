@@ -1,0 +1,174 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    
+    
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #caba9c;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #4d2d18;
+    position: relative;
+}
+
+h1::after, h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #6a11cb;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #0c0b0b;
+}
+
+input {
+    width: 100%;
+    padding: 12px , 0px ;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+
+input:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.3);
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+.instructions {
+    font-size: 0.9em;
+    color: #666;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.hidden {
+    display: none;
+}
+#previewSection {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px dashed #6a11cb;
+    border-radius: 10px;
+    background: #f9f9f9;
+    color: #333;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#previewImage {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#previewDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #555;
+}
+
+#previewDetails span {
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+}
+
+#previewPriceText {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2575fc;
+}
+
+
+
+
+p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+span {
+    font-weight: bold;
+    color: #333;
+}

@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #4d2d18;
+  background-image: url('book-background.jpg'); /* Replace with your own image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+  overflow: auto;
+}
+
+/* Signup Container */
+.signup-container {
+  background-color: #caba9c;
+  padding: 40px; /* Space for form fields */
+  border-radius: 15px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-out;
+  margin-top: 20px;
+}
+
+/* Heading Styling */
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color:  #4d2d18; 
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Input Group Styling */
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.input-group label {
+  display: block;
+  font-size: 16px;
+ color: #0c0c0c;
+  margin-bottom: 5px;
+}
+
+.input-group input, .input-group textarea {
+  width: 100%;
+  padding: 12px 40px 12px 40px; /* Adjust padding for icons inside the box */
+  font-size: 16px;
+  border: 2px solid #0c0c0c;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #0c0c0c;
+  transition: all 0.3s ease;
+}
+
+/* Aligning the placeholder text with the icon */
+.input-group input::placeholder, .input-group textarea::placeholder {
+  color: #0c0c0c;
+  font-size: 14px;
+  padding-left: 45px; /* Ensures placeholder text is aligned with the icon */
+}
+
+/* Regular Input Icon Styling */
+.input-group.regular-icon input {
+  padding-left: 45px; /* Space for the left icon */
+}
+
+.input-group.regular-icon i {
+  position: absolute;
+  left: 15px; /* Position icon inside the box */
+  top: 65%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #0c0c0c;
+}
+
+/* Password Input Group Styling */
+.input-group.password-icon input {
+  padding-right: 45px; /* Space for the right icon (eye icon) */
+}
+
+.input-group.password-icon i {
+  position: absolute;
+  left: 15px; /* Position icon inside the box */
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #0c0c0c;
+}
+
+#eye-password {
+  position: absolute;
+  right: 10px; /* Position eye icon inside the box on the right */
+  top: 79%;
+  transform: translateY(-50%);
+  width: 24px;
+  cursor: pointer;
+}
+#eye-confirm {
+  position: absolute;
+  right: 10px; /* Position eye icon inside the box on the right */
+  top: 79%;
+  transform: translateY(-50%);
+  width: 24px;
+  cursor: pointer;
+}
+
+/* Input Focus Styling */
+.input-group input:focus, .input-group textarea:focus {
+  border-color: #0ebb4b;
+  outline: none;
+}
+
+/* Button Styling */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #09c638;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #068e28;
+}
+
+/* Footer Text */
+.footer-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #0c0c0c;
+}
+
+.footer-text a {
+  color: #0d24f3;
+  text-decoration: none;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
+#eye {
+  width: 24px;
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .signup-container {
+    padding: 20px;
+  }
+
+  .signup-form h2 {
+    font-size: 22px;
+  }
+
+  .input-group input, .input-group textarea, .btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+}

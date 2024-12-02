@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Confirm Order - UPI Payment</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="payment-section">
+    <h1>Payment Details</h1>
+  
+    <div class="order-summary">
+      <h3>Order Summary</h3>
+      <ul id="order-items">
+        
+      </ul>
+      <div class="total">
+        <span>Total: </span><span id="order-total"></span>
+      </div>
+    </div>
+
+   
+    <div id="upi-app-section" class="payment-input">
+        <label for="upi-app">Choose UPI App</label>
+        <select id="upi-app">
+          <option value="googlepay">Google Pay</option>
+          <option value="phonepe">PhonePe</option>
+          <option value="paytm">Paytm</option>
+        </select>
+      </div>
+
+    <div id="upi-section" class="payment-input">
+      <label for="upi-id">Enter UPI ID</label>
+      <input type="text" id="upi-id" placeholder="example@upi" />
+    </div>
+
+ 
+  
+
+    <button class="confirm-button" onclick="confirmOrder()">Confirm Order</button>
+
+    <div id="success-message" class="success-message" style="display: none;">
+      <p>Your payment is being processed...</p>
+    </div>
+
+    <div id="loading-spinner" class="loading-spinner" style="display: none;">
+      <div class="spinner"></div>
+      <p>Redirecting to UPI app...</p>
+    </div>
+  </div>
+</div>
+
+<script src="payment.js"></script>
+
+</body>
+</html>
